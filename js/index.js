@@ -1,10 +1,13 @@
   const newComment= document.getElementById('new-comment')
+  const noValue=document.getElementById('no-value')
 // for comment
 document.getElementById('comment-btn').addEventListener('click',function(){
- 
+    const commentbtn=document.querySelector('#comment-btn')
     const commentArea = document.getElementById('comment-area')
     const commentValue = commentArea.value
     let setComment = document.createElement('p')
+   
+
     setComment.classList.add("ml-2","mt-2", "bg-cyan-100","p-4","border-2","w-1/2","rounded-lg")
     commentArea.value=""
      setComment.innerHTML=commentValue
